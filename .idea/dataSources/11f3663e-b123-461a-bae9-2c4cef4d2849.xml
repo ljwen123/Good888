@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
+    <root id="1">
+      <ServerVersion>5.0.67</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="information_schema"/>
+    <schema id="3" parent="1" name="mysql"/>
+    <schema id="4" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="5" parent="4" name="student"/>
+    <column id="6" parent="5" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="7" parent="5" name="name">
+      <Position>2</Position>
+      <DataType>VARCHAR(10)|12s</DataType>
+    </column>
+    <column id="8" parent="5" name="age">
+      <Position>3</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="9" parent="5" name="gender">
+      <Position>4</Position>
+      <DataType>VARCHAR(10)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>
